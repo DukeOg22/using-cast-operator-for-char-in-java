@@ -1,0 +1,15 @@
+ public static void Q3() {
+        Scanner myObj = new Scanner(System.in);
+        int number;
+        // Enter a number and press Enter
+        System.out.println("Enter number between 0 and 15");
+        number = myObj.nextInt();
+        int radix = 16;
+
+        if (number <= 9){
+            System.out.println(number);
+        } else {
+            char A = Character.forDigit(number,radix);
+            System.out.println(A);
+        }
+    }
